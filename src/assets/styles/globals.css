@@ -1,0 +1,45 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --main-color: #80db66;
+  --primary-color: #25262f;
+  --second-color: #e2ecf6;
+  --text-color: #4d4d5c;
+  --section-bg: #e2ecf6;
+  --main-border: #bcc7d3;
+  --meta-text-color: #9b9db1;
+
+  --background: #ffffff;
+  --foreground: #25262f;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #2d2e36;
+    --text-color: #b0aac0;
+    --section-bg: #212228;
+    --main-border: #474747;
+
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
