@@ -1,2 +1,6 @@
+export * from "@components/ui/Menu"
+export * from "@components/ui/Image"
 export * from "@components/ui/Button"
+export * from "@components/ui/Layout"
+export * from "@components/ui/Avatar"
 export * from "@components/ui/Dropdown"

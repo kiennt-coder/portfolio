@@ -5,6 +5,10 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "@styles/animations";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import 'swiper/css/navigation';
 
 :root {
   --main-color: #80db66;
@@ -32,14 +36,134 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .matrix-l {
+    transform: matrix(0, -1, 1, 0, 0, 0);
+  }
+
+  /* rotate */
+  .rotate-y-0 {
+    transform: rotateY(0deg);
+  }
+  
+  .rotate-y-1 {
+    transform: rotateY(1deg);
+  }
+
+  .rotate-y-2 {
+    transform: rotateY(2deg);
+  }
+
+  .rotate-y-3 {
+    transform: rotateY(3deg);
+  }
+
+  .rotate-y-6 {
+    transform: rotateY(6deg);
+  }
+
+  .rotate-y-12 {
+    transform: rotateY(12deg);
+  }
+
+  .rotate-y-45 {
+    transform: rotateY(45deg);
+  }
+
+  .rotate-y-90 {
+    transform: rotateY(90deg);
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .rotate-y-360 {
+    transform: rotateY(360deg);
+  }
+
+  .rotate-y-0 {
+    transform: rotateY(0deg);
+  }
+  
+  .rotate-x-1 {
+    transform: rotateX(1deg);
+  }
+
+  .rotate-x-2 {
+    transform: rotateX(2deg);
+  }
+
+  .rotate-x-3 {
+    transform: rotateX(3deg);
+  }
+
+  .rotate-x-6 {
+    transform: rotateX(6deg);
+  }
+
+  .rotate-x-12 {
+    transform: rotateX(12deg);
+  }
+
+  .rotate-x-45 {
+    transform: rotateX(45deg);
+  }
+
+  .rotate-x-90 {
+    transform: rotateX(90deg);
+  }
+
+  .rotate-x-180 {
+    transform: rotateX(180deg);
+  }
+
+  .rotate-x-360 {
+    transform: rotateX(360deg);
+  }
+
+  /* animation */
+  .rotate-animation {
+    animation: rotation 10s infinite linear;
+  }
+
+  .heartbeat-middle-animation {
+    animation: heartbeat-middle 5s infinite alternate;
+  }
+
+  .marquee-animation {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .marquee-animation span {
+    display: inline-block;
+    min-width: 100%;
+    white-space: nowrap;
+  }
+
+  .marquee-l-animation span {
+    animation: marquee-l 20s linear infinite;
+  }
+
+  .marquee-r-animation span {
+    animation: marquee-r 20s linear infinite;
+  }
+
+  .text-stroke-base {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px currentColor;
   }
 }

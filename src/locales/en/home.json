@@ -1,3 +1,10 @@
 {
-    "hello": "Hello"
+    "header": {
+        "download_cv": "Download CV"
+    },
+    "slider": {
+        "title": "<1>Hello I'm</1> Kiennt",
+        "description": "A Passionate <1>Software Developer</1>",
+        "say_hello": "Say Hello"
+    }
 }

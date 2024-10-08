@@ -7,6 +7,10 @@ import { useTheme as useNextTheme } from 'next-themes';
 export const useTheme = () => {
   const { theme, setTheme } = useNextTheme();
 
+  const changeTheme = (theme: THEME) => {
+    setTheme(theme);
+  }
+
   const toggleTheme = () => {
     if (theme === THEME.DARK) {
       setTheme(THEME.LIGHT);
@@ -34,6 +38,7 @@ export const useTheme = () => {
 
   return {
     theme,
+    changeTheme,
     toggleTheme,
     setSystemTheme,
   };

@@ -2,11 +2,12 @@ import { dir } from "i18next";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { useTranslation } from "@lib/i18n";
+import { BaseLayoutProps } from "@/types/base";
+import AppProvider from "@providers/AppProvider";
 import { fallbackLng, languages } from "@lib/i18n/settings";
 
 // Importing the required CSS files
 import "@styles/globals.css";
-import AppProvider from "@providers/AppProvider";
 
 const geistSans = localFont({
     src: "../../assets/fonts/GeistVF.woff",
@@ -43,14 +44,9 @@ export default function RootLayout({
     params: {
         lng
     }
-}: Readonly<{
-    children: React.ReactNode;
-    params: {
-        lng: string;
-    };
-}>) {
+}: Readonly<BaseLayoutProps>) {
     return (
-        <html suppressHydrationWarning lang={lng} dir={dir(lng)}>
+        <html suppressHydrationWarning lang={lng} dir={dir(lng)} rel="canonical">
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >

@@ -1,16 +1,16 @@
 import { DropdownProps } from "@/types/props";
-import { generateKey } from "@helpers/common";
+// import { generateKey } from "@helpers/common";
 
 
-export default function Dropdown({ items }: DropdownProps) {
+export const Dropdown = ({ items }: DropdownProps<unknown>) => {
     const renderItems = () => {
         if (!items) return null;
 
-        return items.map((item) => (
-            <li key={generateKey()}>
-                <a>{item.label}</a>
-            </li>
-        ));
+        // return items.map((item) => (
+        //     <li key={generateKey()}>
+        //         <a>{item}</a>
+        //     </li>
+        // ));
     }
 
     return (

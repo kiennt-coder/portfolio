@@ -1,6 +1,7 @@
-import daisyui from "daisyui"
-import typography from "@tailwindcss/typography"
+import daisyui from "daisyui";
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
+import themes from "daisyui/src/theming/themes"
 
 const config: Config = {
   darkMode: ['class', '[data-theme="dark"]'],
@@ -12,11 +13,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        text: "var(--text-color)",
-        main: "var(--main-color)",
-        primary: "var(--primary-color)",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // text: "var(--text-color)",
+        // main: "var(--main-color)",
+        // primary: "var(--primary-color)",
+        // background: "var(--background)",
+        // foreground: "var(--foreground)",
       },
     },
   },
@@ -25,7 +26,18 @@ const config: Config = {
     typography
   ],
   daisyui: {
-    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: [
+      {
+        light: {
+          ...themes["light"],
+          "primary": "#80db66",
+        },
+        dark: {
+          ...themes["dark"],
+          "primary": "#80db66",
+        },
+      },
+    ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     // darkTheme: "light", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components

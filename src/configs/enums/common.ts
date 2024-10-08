@@ -24,3 +24,18 @@ export enum PLACEMENT {
     LEFT = 'left',
     RIGHT = 'right',
 }
+
+export enum SHAPE {
+    ROUND = 'ROUND',
+    SQUARE ='SQUARE',
+    CIRCLE = 'CIRCLE',
+    MASK_SQUIRCLE = 'MASK_SQUIRCLE',
+    MASK_HEXAGON = 'MASK_HEXAGON',
+    MASK_TRIANGLE = 'MASK_TRIANGLE',
+}
+
+export enum MASK {
+    MASK_SQUIRCLE = 'MASK_SQUIRCLE',
+    MASK_HEXAGON = 'MASK_HEXAGON',
+    MASK_TRIANGLE = 'MASK_TRIANGLE',
+}

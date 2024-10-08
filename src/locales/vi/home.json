@@ -1,3 +1,10 @@
 {
-    "hello": "Xin chào"
+    "header": {
+        "download_cv": "Tải xuống CV"
+    },
+    "slider": {
+        "title": "<1>Xin chào tôi là</1> Kiennt",
+        "description": "Một người đam mê <1>Phát triển phần mềm</1>",
+        "say_hello": "Nói xin chào"
+    }
 }
