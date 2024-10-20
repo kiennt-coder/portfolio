@@ -7,7 +7,7 @@ import { AosWrapperProps } from "@/types/props";
 // Import css
 import "aos/dist/aos.css";
 
-export default function AosWrapper({ children }: AosWrapperProps) {
+export default function AosWrapper({ children, ...props }: AosWrapperProps) {
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -18,5 +18,5 @@ export default function AosWrapper({ children }: AosWrapperProps) {
         };
     }, []);
 
-    return <>{children}</>;
+    return <div {...props}>{children}</div>;
 }

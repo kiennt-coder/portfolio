@@ -17,7 +17,7 @@ export default function BlogSwiper() {
             </div>
             <Swiper
                 spaceBetween={24}
-                slidesPerView={3}
+                slidesPerView={1}
                 navigation={{
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -25,7 +25,21 @@ export default function BlogSwiper() {
                 loop
                 grabCursor
                 modules={[Navigation]}
-                className="blog-swipper mt-16"
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                    1440: {
+                        slidesPerView: 3,
+                    },
+                }}
+                className="blog-swipper md:mt-16 mt-8"
             >
                 <SwiperSlide>
                     <div className="group card bg-base-100 w-full shadow-lg">

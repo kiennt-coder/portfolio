@@ -10,7 +10,7 @@ interface HTMLDivElementWithTilt extends HTMLDivElement {
     vanillaTilt?: VanillaTilt;
 }
 
-const TiltWrapper: React.FC<TiltWrapperProps> = ({ children, options }) => {
+const TiltWrapper: React.FC<TiltWrapperProps> = ({ children, options, ...props }) => {
     const tiltRef = useRef<HTMLDivElementWithTilt | null>(null);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const TiltWrapper: React.FC<TiltWrapperProps> = ({ children, options }) => {
         }
     }, [options]);
 
-    return <div ref={tiltRef}>{children}</div>;
+    return <div ref={tiltRef} {...props}>{children}</div>;
 };
 
 export default TiltWrapper;

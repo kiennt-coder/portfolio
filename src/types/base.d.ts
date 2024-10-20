@@ -1,5 +1,6 @@
 import { ImageProps } from "next/image";
-import { SHAPE, TRIGGER } from "@enums/common";
+import { SHAPE, THEME, TRIGGER } from "@enums/common";
+import { Props as UseCountUpProps } from "use-count-up";
 import { ButtonHTMLAttributes, CSSProperties, ReactNode, SVGProps } from "react";
 
 export interface BaseLayoutProps {
@@ -69,6 +70,10 @@ export interface BaseMenuProps<T> extends BaseComponentProps {
     collapsible?: boolean;
 }
 
+export interface BaseThemeControllerProps {
+    children: (theme: THEME, onThemeChange: (theme: THEME) => void) => JSX.Element | ReactNode;
+}
+
 // ====================================== End Props ======================================
 
 // ====================================== Provider ======================================
@@ -84,3 +89,10 @@ export interface BaseWrapperProps extends BaseComponentProps {
 }
 
 // ====================================== End Wrapper ======================================
+
+// ====================================== Counter Up ======================================
+export interface BaseCountUpProps extends Omit<UseCountUpProps, "children"> {
+    children: (value: number, reset: () => void) => JSX.Element | ReactNode;
+}
+
+// ====================================== End Counter Up ======================================

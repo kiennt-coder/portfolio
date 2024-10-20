@@ -14,7 +14,7 @@ export default function Brand() {
                 <div className="border-b">
                     <Swiper
                         className="mt-16 mb-20"
-                        slidesPerView={5}
+                        slidesPerView={1}
                         grabCursor
                         autoplay={{
                             delay: 3000,
@@ -22,6 +22,20 @@ export default function Brand() {
                         }}
                         loop
                         modules={[Autoplay]}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                            },
+                            1440: {
+                                slidesPerView: 5,
+                            },
+                        }}
                     >
                         <SwiperSlide className="group relative z-[0] overflow-hidden">
                             <Link href="#" className="block text-center pt-5 group-hover:-translate-y-full dark:group-hover:-translate-y-0 dark:transition-none duration-300">

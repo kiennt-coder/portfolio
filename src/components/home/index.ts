@@ -13,6 +13,7 @@ import Contact from "@components/home/Contact"
 import Education from "@components/home/Education"
 import HeaderMenu from "@components/home/HeaderMenu"
 import Experience from "@components/home/Experience"
+import MenuDrawer from "@components/home/MenuDrawer"
 import Testimonial from "@components/home/Testimonial"
 import SingleSlider from "@components/home/SingleSlider"
 import IntroFeature from "@components/home/IntroFeature"
@@ -35,6 +36,7 @@ export {
     Education,
     HeaderMenu,
     Experience,
+    MenuDrawer,
     Testimonial,
     SingleSlider,
     IntroFeature,

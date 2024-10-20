@@ -1,13 +1,14 @@
 "use client"
 
-import { Props as CountUpProps, useCountUp } from 'use-count-up'
+import { useCountUp } from 'use-count-up'
+import { BaseCountUpProps } from '@/types/base'
 
-export const CountUp = ({ ...props }: CountUpProps) => {
-    const { value } = useCountUp({
+export const CountUp = ({ children, ...props }: BaseCountUpProps) => {
+    const { value, reset } = useCountUp({
         isCounting: true,
         duration: 3.2,
         ...props
     })
 
-    return value
+    return <>{children(value as number, reset)}</>
 }

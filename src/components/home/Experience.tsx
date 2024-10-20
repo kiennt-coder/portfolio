@@ -6,14 +6,14 @@ import ActivitySummaryBox from "@components/home/ActivitySummaryBox";
 
 export default function Experience() {
     return (
-        <Layout.Section className="pb-40">
-            <div className="relative z-0 ">
-                <div className="absolute z-[1] top-0 bottom-0 left-0 w-1/2 rounded-e-xl overflow-hidden bg-[url('/images/work/work-img.jpg')] bg-no-repeat bg-cover"></div>
+        <Layout.Section className="md:pb-40 pb-16">
+            <div className="relative flex lg:flex-col flex-col-reverse z-0">
+                <div className="lg:absolute [position:inherit] -z-[1] top-0 bottom-0 left-0 lg:w-1/2 w-11/12 md:min-h-[600px] min-h-[450px] mx-auto lg:rounded-e-xl rounded-xl overflow-hidden bg-[url('/images/work/work-img.jpg')] bg-no-repeat bg-cover"></div>
                 <div className="container mx-auto">
                     <div className="flex flex-row items-center">
-                        <div className="basis-6/12 px-3"></div>
-                        <div className="basis-6/12 px-3">
-                            <div className="pl-24 mt-40 mb-12 pb-20">
+                        <div className="lg:basis-6/12 lg:block hidden px-3"></div>
+                        <div className="lg:basis-6/12 basis-full px-3">
+                            <div className="xl:pl-24 lg:pl-4 pl-0 lg:mt-40 lg:mb-12 lg:pb-20 mt-0 mb-0 pb-6">
                                 <ContentBox title="My Experience" subTitle="Work Experience">
                                     Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini hoye khbor nio na sit voluptatem.
                                 </ContentBox>

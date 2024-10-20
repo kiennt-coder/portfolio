@@ -4,15 +4,18 @@ import { useEffect, useState } from "react"
 
 interface UseWindowScrollResponse {
   isScroll: boolean;
+  scrollValue: number;
 }
 
 export default function useWindowScroll(): UseWindowScrollResponse {
   const [isScroll, setIsScroll] = useState<boolean>(false)
+  const [scrollValue, setScrollValue] = useState(0)
 
   function handleWindowScroll(this: Window) {
     const isScrolled = this.scrollY > 0
 
     setIsScroll(isScrolled)
+    setScrollValue(this.scrollY)
   }
 
   useEffect(() => {
@@ -25,6 +28,7 @@ export default function useWindowScroll(): UseWindowScrollResponse {
   }, [])
 
   return {
-    isScroll
+    isScroll,
+    scrollValue,
   }
 }

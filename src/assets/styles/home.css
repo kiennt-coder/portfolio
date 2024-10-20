@@ -1,19 +1,14 @@
 
-.slider_image:before {
-    content: "";
-    position: absolute;
-    top: 100px;
-    right: 5%;
-    width: 670px;
-    height: 660px;
-    z-index: -1;
-    border-radius: 50%;
-    transform: scale(1);
-    background-color: rgba(59, 60, 70, 0.344);
+.slider_image {
+    @apply before:content-[""] before:absolute before:-z-[1] before:rounded-full before:scale-100 before:bg-neutral-600/30 2xl:before:top-24 xl:before:top-16 lg:before:top-4 md:before:top-8 xl:before:left-[10%] lg:before:-left-[15%] md:before:-left-[5%] 2xl:before:w-[770px] xl:before:w-[670px] lg:before:w-[500px] md:before:w-[480px] 2xl:before:h-[761px] xl:before:h-[660px] lg:before:h-[490px] md:before:h-[470px] before:size-[350px] before:top-9 before:-left-7;
+}
+
+.testimonial-swiper {
+    @apply pb-14;
 }
 
 .testimonial-swiper .swiper-pagination {
-    @apply static mt-12 text-start;
+    @apply md:static md:mt-12 mt-0 bottom-1 text-start;
 }
 
 .testimonial-swiper .swiper-pagination-bullet {
@@ -41,7 +36,7 @@
 }
 
 .blog-swiper-wrapper .swiper-navigation-btn {
-    @apply -top-20 after:hidden;
+    @apply md:-top-20 -top-14 after:hidden;
 }
 
 .blog-swiper-wrapper .swiper-navigation-btn.swiper-button-prev {

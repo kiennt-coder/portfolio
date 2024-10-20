@@ -21,7 +21,7 @@ const defaultIcon = L.icon({
 export default function ContactMap() {
 
     return (
-        <div className='h-80 mt-16 rounded-lg overflow-hidden' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="500">
+        <div className='h-80 md:mt-16 mt-10 rounded-lg overflow-hidden' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="500">
             <MapContainer center={[21.0283334, 105.854041]} zoom={13} scrollWheelZoom={false} className="size-full">
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

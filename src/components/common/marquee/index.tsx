@@ -16,7 +16,7 @@ const MarqueeItem = ({ label, repeat, outline, startFrom }: MarqueeItemProps) =>
     }
 
     const renderLabel = () => {
-        return Array(repeat).fill(null).map((_, index) => <span key={label + index} className={cn("text-8xl text-base-content dark:text-gray-600 font-semibold pr-4 uppercase", outline && "text-stroke-base")}>{label}</span>)
+        return Array(repeat).fill(null).map((_, index) => <span key={label + index} className={cn("xl:text-8xl lg:text-7xl text-6xl text-base-content dark:text-gray-600 font-semibold pr-4 uppercase", outline && "text-stroke-base")}>{label}</span>)
     }
 
     return (

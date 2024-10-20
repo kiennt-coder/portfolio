@@ -49,19 +49,21 @@ const isOddNumber = (value: number): boolean => {
 export default function IntroFeature() {
     const renderIntroFeatureCard = () => {
         return introFeatures.map((feature, index) => (
-            <IntroFeatureCard key={index.toString()} className={cn("basis-1/4", isOddNumber(index) && "mt-16")} data={feature} />
+            <div key={index.toString()} className="lg:basis-1/4 md:basis-2/4 basis-11/12 px-3">
+                <IntroFeatureCard className={cn("md:mb-0 mb-8", isOddNumber(index) && "lg:mt-16 md:mt-8")} data={feature} />
+            </div>
         ))
     }
 
     return (
         <Layout.Section className="bg-slate-200 dark:bg-base-200 relative z-0 overflow-hidden">
             <div className="container mx-auto">
-                <div className="pt-44 pb-40 flex flex-wrap flex-row items-center justify-between">
+                <div className="xl:pt-44 xl:pb-40 md:py-32 pt-16 pb-10 flex flex-wrap flex-row items-stretch justify-center">
                     {renderIntroFeatureCard()}
                 </div>
             </div>
-            <div className="absolute -z-[1] -right-8 -bottom-52">
-                <p className="text-gray-100 dark:text-gray-600/20 text-[300px] font-semibold">Kiennt</p>
+            <div className="absolute -z-[1] -right-8 xl:-bottom-52 md:-bottom-36">
+                <p className="text-gray-100 dark:text-gray-600/20 xl:text-[300px] md:text-[230px] md:inline-block hidden font-semibold">Kiennt</p>
             </div>
         </Layout.Section>
     )

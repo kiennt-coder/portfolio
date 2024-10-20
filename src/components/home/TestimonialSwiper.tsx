@@ -17,7 +17,7 @@ export default function TestimonialSwiper() {
     };
 
     return (
-        <div className="pl-20 pr-24">
+        <div className="xl:pl-20 xl:pr-24 lg:pl-[4.375rem] lg:pr-3 md:pl-16 md:pr-3 pl-12 pr-0">
             <Swiper
                 className="testimonial-swiper"
                 grabCursor
@@ -28,7 +28,7 @@ export default function TestimonialSwiper() {
             >
                 <SwiperSlide>
                     <div>
-                        <blockquote className="text-2xl italic">
+                        <blockquote className="xl:text-2xl md:text-xl text-lg italic">
                             Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia
                             deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis
                             iste natus error sit volup tatem gotiraz bole ami ke
@@ -40,7 +40,7 @@ export default function TestimonialSwiper() {
                                 </div>
                             </div>
                             <div>
-                                <h5 className="text-2xl dark:text-neutral-50 font-semibold capitalize mb-1">Paul harrison,</h5>
+                                <h5 className="md:text-2xl text-xl dark:text-neutral-50 font-semibold capitalize mb-1">Paul harrison,</h5>
                                 <p className="text-base text-gray-400">eThemeStudio</p>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ export default function TestimonialSwiper() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div>
-                        <blockquote className="text-2xl italic">
+                        <blockquote className="xl:text-2xl md:text-xl text-lg italic">
                             Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia
                             deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis
                             iste natus error sit volup tatem gotiraz bole ami ke
@@ -60,7 +60,7 @@ export default function TestimonialSwiper() {
                                 </div>
                             </div>
                             <div>
-                                <h5 className="text-2xl font-semibold capitalize mb-1">Paul harrison,</h5>
+                                <h5 className="md:text-2xl text-xl font-semibold capitalize mb-1">Paul harrison,</h5>
                                 <p className="text-base text-gray-400">eThemeStudio</p>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ export default function TestimonialSwiper() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div>
-                        <blockquote className="text-2xl italic">
+                        <blockquote className="xl:text-2xl md:text-xl text-lg italic">
                             Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia
                             deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis
                             iste natus error sit volup tatem gotiraz bole ami ke
@@ -80,7 +80,7 @@ export default function TestimonialSwiper() {
                                 </div>
                             </div>
                             <div>
-                                <h5 className="text-2xl font-semibold capitalize mb-1">Paul harrison,</h5>
+                                <h5 className="md:text-2xl text-xl font-semibold capitalize mb-1">Paul harrison,</h5>
                                 <p className="text-base text-gray-400">eThemeStudio</p>
                             </div>
                         </div>

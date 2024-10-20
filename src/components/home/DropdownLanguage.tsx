@@ -4,12 +4,12 @@ import { languages } from "@/lib/i18n/settings";
 import { DropdownLanguageProps } from "@/types/props";
 import { ChevronDown, LanguageOutlined } from "@components/icons";
 
-export default function DropdownLanguage({ className }: Omit<DropdownLanguageProps, "i18n">) {
+export default function DropdownLanguage({ className, lng }: Omit<DropdownLanguageProps, "i18n">) {
     const renderDropdownItems = () => {
-        return languages.map((lng) => (
-            <li key={lng}>
-                <Link href={`/${lng}`} className="hover:bg-base-100 focus:bg-base-100 active:!text-base-content active:!bg-base-100 font-semibold">
-                    {lng.toUpperCase()}
+        return languages.map((lang) => (
+            <li key={lang}>
+                <Link href={`/${lang}`} className={cn("hover:bg-base-300 focus:bg-base-300 active:!text-base-100 active:!bg-base-content font-semibold", lng === lang && "!text-base-100 !bg-base-content")}>
+                    {lang.toUpperCase()}
                 </Link>
             </li>
         ));
@@ -23,8 +23,6 @@ export default function DropdownLanguage({ className }: Omit<DropdownLanguagePro
             </div>
             <ul tabIndex={0} className="dropdown-content menu bg-base-200 rounded-box z-[1] w-52 p-2 shadow gap-2">
                 {renderDropdownItems()}
-                {/* <li><button className="hover:bg-base-100 focus:bg-base-100 active:!text-base-content active:!bg-base-100 font-semibold" onClick={() => handleChangeLanguage("")}>Light</button></li>
-                <li><button className="hover:bg-base-100 focus:bg-base-100 active:!text-base-content active:!bg-base-100 font-semibold" onClick={() => handleChangeLanguage("")}>Dark</button></li> */}
             </ul>
         </div>
     )

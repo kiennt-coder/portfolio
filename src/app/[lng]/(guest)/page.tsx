@@ -2,6 +2,7 @@
 import { Layout } from "@components/ui";
 import { useTranslation } from "@lib/i18n";
 import { BasePageProps } from "@/types/base";
+import { ScrollToTop } from "@components/common";
 import { fallbackLng, languages } from "@lib/i18n/settings";
 import { Header, SingleSlider, IntroFeature, About, Work, Skills, FunFact, Award, Experience, Education, Service, Pricing, Testimonial, Brand, Contact, Blog, Footer } from "@components/home";
 
@@ -33,6 +34,7 @@ export default async function page({ params: { lng } }: BasePageProps) {
       <Contact />
       <Blog />
       <Footer />
+      <ScrollToTop />
     </Layout>
   );
 }

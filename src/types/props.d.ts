@@ -1,7 +1,7 @@
 import { i18n } from "i18next";
-import { HTMLAttributes, ReactNode } from "react";
 import { TiltOptions } from "vanilla-tilt";
-import { IntroFeature } from "@/types/models";
+import { HTMLAttributes, MouseEventHandler, ReactNode } from "react";
+import { Award, IntroFeature, Service } from "@/types/models";
 import { BaseAvatarProps, BaseButtonProps, BaseComponentProps, BaseDropdownProps, BaseIconProps, BaseMenuItemProps, BaseMenuProps, BaseProviderProps, BaseWrapperProps } from "@/types/base";
 
 // ====================================== Button ======================================
@@ -90,6 +90,16 @@ export interface FooterProps extends BaseComponentProps {
 
 // ====================================== End Layout ======================================
 
+export interface MenuDrawerProps extends BaseComponentProps {
+    lng?: string;
+}
+
+export interface HeaderMenuItemProps extends BaseComponentProps {
+    href: string;
+    isActive?: boolean;
+    onClick: MouseEventHandler<HTMLAnchorElement>;
+}
+
 // ====================================== Intro Feature ======================================
 export interface IntroFreatureCardProps extends BaseComponentProps {
     data: IntroFeature;
@@ -97,15 +107,15 @@ export interface IntroFreatureCardProps extends BaseComponentProps {
 
 // ====================================== End Intro Feature ======================================
 
-// ====================================== Content Box Wrapper ======================================
+// ====================================== Content Box ======================================
 export interface ContentBoxProps extends BaseComponentProps {
     title: string;
     subTitle: string;
 }
 
-// ====================================== End Content Box Wrapper ======================================
+// ====================================== End Content Box ======================================
 
-// ====================================== Activity Summary Box Wrapper ======================================
+// ====================================== Activity Summary Box ======================================
 export interface ActivitySummaryBoxItemProps extends BaseComponentProps {
     icon: ReactNode;
     name: string;
@@ -118,9 +128,9 @@ export interface ActivitySummaryBoxProps extends BaseComponentProps {
 
 }
 
-// ====================================== End Activity Summary Box Wrapper ======================================
+// ====================================== End Activity Summary Box ======================================
 
-// ====================================== Marquee Wrapper ======================================
+// ====================================== Marquee ======================================
 export interface MarqueeItemProps extends BaseComponentProps {
     label: string;
     repeat?: number;
@@ -132,7 +142,7 @@ export interface MarqueeProps extends BaseComponentProps {
 
 }
 
-// ====================================== End Marquee Wrapper ======================================
+// ====================================== End Marquee ======================================
 
 // ====================================== Wrapper ======================================
 export interface TiltWrapperProps extends BaseWrapperProps {
@@ -144,3 +154,50 @@ export interface AosWrapperProps extends BaseWrapperProps {
 }
 
 // ====================================== End Wrapper ======================================
+
+// ====================================== FunFact ======================================
+export interface FunFactStatProps extends BaseComponentProps {
+    value: number;
+    description: string;
+    suffix?: string;
+}
+
+// ====================================== End FunFact ======================================
+
+// ====================================== Award ======================================
+export interface AwardItemProps extends BaseComponentProps {
+    data: Award;
+}
+
+// ====================================== End Award ======================================
+
+
+// ====================================== Skill ======================================
+export interface SkillProgressProps extends BaseComponentProps {
+    label: string;
+    value: number;
+}
+
+// ====================================== End Skill ======================================
+
+// ====================================== Service ======================================
+export interface ServiceCardProps extends BaseComponentProps {
+    data: Service
+}
+
+// ====================================== End Service ======================================
+
+// ====================================== Pricing ======================================
+export interface PricingCardProps extends BaseComponentProps {
+
+}
+
+// ====================================== End Pricing ======================================
+
+
+// ====================================== Follow Me ======================================
+export interface FollowMeProps extends BaseComponentProps {
+
+}
+
+// ====================================== End Follow Me ======================================
