@@ -4,7 +4,14 @@
     },
     "slider": {
         "title": "<1>Hello I'm</1> Kiennt",
-        "description": "A Passionate <1>Software Developer</1>",
+        "description": {
+            "label": "A Passionate <1>Software Engineer</1>",
+            "texts": [
+                "Software Engineer",
+                "Web designer",
+                "Freelancer"
+            ]
+        },
         "say_hello": "Say Hello"
     }
 }

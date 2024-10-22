@@ -100,6 +100,10 @@ export interface HeaderMenuItemProps extends BaseComponentProps {
     onClick: MouseEventHandler<HTMLAnchorElement>;
 }
 
+export interface TyperProps {
+    texts: string[];
+}
+
 // ====================================== Intro Feature ======================================
 export interface IntroFreatureCardProps extends BaseComponentProps {
     data: IntroFeature;

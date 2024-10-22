@@ -1,12 +1,14 @@
 
 
+
 import Link from "next/link";
 import { i18n } from "i18next"
 import Image from "next/image"
 import { cn } from "@helpers/common"
 import { Layout } from "@components/ui";
-import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined } from "@components/icons";
+import Typer from "@components/home/Typer";
 import { Trans } from "react-i18next/TransWithoutContext";
+import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined } from "@components/icons";
 
 export default function SingleSlider({ i18n, lng }: { i18n: i18n, lng: string }) {
     const t = i18n.getFixedT(lng, "home");
@@ -25,8 +27,8 @@ export default function SingleSlider({ i18n, lng }: { i18n: i18n, lng: string })
                                 </Trans>
                             </h1>
                             <h2 className="md:text-2xl text-lg text-white font-semibold mb-10">
-                                <Trans i18nKey="slider.description" t={t} components={{
-                                    1: <span className="xl:text-[36px] lg:text-[32px] md:text-[32px] text-xl text-primary font-bold" />,
+                                <Trans i18nKey="slider.description.label" t={t} components={{
+                                    1: <Typer texts={t("slider.description.texts", { returnObjects: true }) as string[]} />,
                                 }}>
                                     A Passionate <span className="xl:text-[36px] lg:text-[32px] md:text-[32px] text-xl text-primary font-bold">Software Developer</span>
                                 </Trans>
