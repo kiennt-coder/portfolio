@@ -1,0 +1,22 @@
+{
+    "title": "Wellcome back 👋",
+    "description": "Today is a new day. It's your day. You shape it. Sign in to start managing your projects.",
+    "form": {
+        "email": {
+            "label": "Email",
+            "placeholder": "Example@gmail.com"
+        },
+        "password": {
+            "label": "Password",
+            "placeholder": "At lest 8 characters"
+        },
+        "submit": "Sign in"
+    },
+    "remember-me": "Remember me",
+    "forgot-password": "Forgot Password?",
+    "or-signin-with": {
+        "label": "Or <1>sign in with</1>",
+        "signin-with": "Sign in with"
+    },
+    "not-have-account": "Don't you have an account? <1>Sign up</1>"
+}
