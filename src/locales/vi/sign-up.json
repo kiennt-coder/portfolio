@@ -1,0 +1,25 @@
+{
+    "title": "Chào mừng trở lại 👋",
+    "description": "Hôm nay là một ngày mới. Đó là ngày của bạn. Bạn định hình nó. Đăng nhập để bắt đầu quản lý dự án của bạn.",
+    "form": {
+        "username": {
+            "label": "Tài khoản",
+            "placeholder": "Nguyễn Văn A"
+        },
+        "email": {
+            "label": "Email",
+            "placeholder": "Vidu@gmail.com"
+        },
+        "password": {
+            "label": "Mật khẩu",
+            "placeholder": "Tối thiểu 8 ký tự"
+        },
+        "submit": "Đăng ký"
+    },
+    "forgot-password": "Quên mật khẩu?",
+    "or-signin-with": {
+        "label": "Hoặc <1>đăng nhập bằng</1>",
+        "signin-with": "Đăng nhập bằng"
+    },
+    "not-have-account": "Bạn đã có tài khoản? <1>Đăng nhập</1>"
+}
