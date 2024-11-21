@@ -1,6 +1,6 @@
 {
-    "title": "Chào mừng trở lại 👋",
-    "description": "Hôm nay là một ngày mới. Đó là ngày của bạn. Bạn định hình nó. Đăng nhập để bắt đầu quản lý dự án của bạn.",
+    "title": "Đăng ký tài khoản",
+    "description": "Nhận tài khoản của riêng bạn.",
     "form": {
         "username": {
             "label": "Tài khoản",

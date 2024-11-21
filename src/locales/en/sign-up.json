@@ -1,6 +1,6 @@
 {
-    "title": "Wellcome back 👋",
-    "description": "Today is a new day. It's your day. You shape it. Sign in to start managing your projects.",
+    "title": "Register Account",
+    "description": "Get your account now.",
     "form": {
         "username": {
             "label": "Username",
